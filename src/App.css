@@ -1,0 +1,191 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Segoe UI', sans-serif;
+  background:#faf7ff;
+  color:#374151;
+  line-height:1.7;
+}
+
+.header{
+  padding:50px 20px;
+  text-align:center;
+
+  background:linear-gradient(
+    135deg,
+    #cbb2e6,
+    #dbeafe
+  );
+
+  box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+.header h1{
+  font-size:3rem;
+  color:#783ab7;
+  margin-bottom:10px;
+}
+
+.header p{
+  font-size:1.1rem;
+  color:#576a91;
+}
+
+.hero-section{
+  text-align:center;
+  padding:70px 20px;
+}
+
+.hero-section h2{
+  font-size:2.5rem;
+  color:#6d28d9;
+  margin-bottom:15px;
+}
+
+.hero-section p{
+  max-width:750px;
+  margin:auto;
+  font-size:18px;
+  color:#4b5563;
+}
+
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+.section h2{
+  text-align:center;
+  color:#7c3aed;
+  margin-bottom:30px;
+  font-size:2rem;
+}
+
+.section p{
+  text-align:center;
+  max-width:900px;
+  margin:auto;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  margin:20px 0;
+  border-radius:18px;
+
+  box-shadow:
+  0 8px 25px rgba(0,0,0,0.06);
+
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+
+  box-shadow:
+  0 15px 30px rgba(124,58,237,0.15);
+}
+
+.card h3{
+  color:#5b21b6;
+  margin-bottom:10px;
+}
+
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+}
+
+.skills span{
+  background:#f3e8ff;
+  color:#6d28d9;
+  padding:12px 20px;
+  border-radius:30px;
+  font-weight:500;
+}
+input,
+select{
+  width:100%;
+  max-width:350px;
+
+  padding:12px;
+  margin:10px;
+
+  border:none;
+  border-radius:10px;
+
+  background:white;
+
+  box-shadow:
+  0 3px 10px rgba(0,0,0,0.08);
+}
+
+.section input,
+.section select{
+  display:block;
+  margin:15px auto;
+}
+
+.btn{
+  padding:12px 30px;
+  border:none;
+  border-radius:30px;
+
+  background:linear-gradient(
+    135deg,
+    #a78bfa,
+    #60a5fa
+  );
+
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+}
+
+.footer{
+  margin-top:60px;
+
+  background:#ede9fe;
+
+  text-align:center;
+  padding:25px;
+
+  color:#5b21b6;
+  font-weight:500;
+}
+
+@media(max-width:768px){
+
+  .header h1{
+    font-size:2rem;
+  }
+
+  .hero-section h2{
+    font-size:2rem;
+  }
+
+  .section h2{
+    font-size:1.7rem;
+  }
+
+  .skills{
+    gap:10px;
+  }
+
+  .skills span{
+    padding:10px 15px;
+  }
+}
